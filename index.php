@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-# If you have already installed then delete this. hghdghgdhfgdh skjhfjdhfhdf
-=======
-# If you have already installed then delete this. hihihihihihi
->>>>>>> f4e72e5373512122ad081e3c4c2121ee67bcc585
 if ( ! file_exists('system/cms/config/database.php'))
 {
 	// Make sure we've not already tried this

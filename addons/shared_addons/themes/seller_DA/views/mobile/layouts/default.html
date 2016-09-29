@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    {{ theme:partial name="metadata" }}
+  </head>
+<body>
+    
+     <div id="container" class="container">  
+    
+{{ theme:partial name="header" }}
+         <div class="container">  
+         	
+            {{ session:messages success="alert alert-success" notice="alert alert-block" error="alert alert-error" }}    	
+          	{{ theme:partial name="breadcrumbs"}}
+
+            {{ template:body }}  
+          </div>
+     </div>      
+            
+   </body>
+
+<div id="footer">
+
+{{ theme:partial name="footer" }}
+
+     
+       </div>
+     
+</html>

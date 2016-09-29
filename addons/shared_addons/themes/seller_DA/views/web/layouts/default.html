@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+      {{ theme:partial name="metadata" }}
+      <style>
+          div.slider {
+              padding-top:50px;
+          }
+      </style>
+    </head>
+<body>
+    
+     <div id="container-fluid"> 
+        <div id ="header" >
+              {{ theme:partial name="header" }}
+        </div>    
+         
+        <div id ="slider" class="slider" >
+             {{ theme:partial name="slider" }}
+        </div> 
+        
+      <!--  
+      <div id="search" class="col-md-8">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Danh Mục Sản Phẩm">
+          </div>
+          <div class="col-md-2" > 
+            <button type="button" class="btn btn-danger" >Tìm Kiếm</button>
+          </div>  
+      </div>
+        -->
+
+
+        <div class="row">  
+        <div id="cat_content" class="col-md-4">
+            <div id="cat_img">
+              <a href="">
+                {{ theme:image file="bia.jpg" class="img-circle img-responsive"}}
+                
+              </a>
+            </div>
+            <div id="cat_name">
+              <a href=""><p class="text-primary">Beer</p></a>
+            </div>
+            <div id="cat_des"></div>
+        </div>
+
+        <div id="cat_content" class="col-md-4">
+            <div id="cat_img">
+              <a href="">
+                {{ theme:image file="cake.jpg" class="img-circle img-responsive"}}
+              </a>
+            </div>
+            <div id="cat_name">
+              <a href=""><p class="text-primary">Cake</p></a>
+            </div>
+            <div id="cat_des"></div>
+        </div>
+
+        <div id="cat_content" class="col-md-4">
+            <div id="cat_img">
+              <a href="">
+                  {{ theme:image file="mi.jpg" class="img-circle img-responsive"}}
+              </a>
+            </div>
+            <div id="cat_name">
+              <a href=""><p class="text-primary">Noodle</p></a>
+            </div>
+            <div id="cat_des"></div>
+        </div>
+      </div>
+         <!--  {{ template:body }} -->
+        
+
+    </div>      
+            
+</body> 
+
+<div id="footer">
+
+      {{ theme:partial name="footer" }}
+
+ </div>
+</html>

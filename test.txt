@@ -1,0 +1,7 @@
+1: Fist commit at branch MASTER
+2. First commit at branch FEATURE1
+2: Second commit at branch MASTER
+3. First commit at branch FEATURE1
+4: Third commit at branch MASTER
+2. First commit at branch FEATURE1
+3. Second commit at branch FEATURE1

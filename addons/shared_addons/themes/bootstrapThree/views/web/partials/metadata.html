@@ -1,0 +1,75 @@
+<title>{{ template:title }} | {{ settings:site_name }}</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .jumbotron{background-color: #b84d45}
+    
+    .panel-body > img{
+        border: medium none;
+        width: 175px;
+        height: 175px;
+        position: relative;
+        width: 100%;
+    }
+        
+    
+    
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      margin-bottom: 0;
+    }
+	
+    .container-fluid{
+        padding-top:0px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+        width: 100%;
+        margin: auto;
+        height:400px;
+  }
+  </style>
+<base href="{{ url:base }}"/>
+
+{{ theme:favicon file="favicons/favicon.ico"}}
+{{ theme:favicon file="favicons/apple-touch-icon.png" rel="apple-touch-icon" }}
+{{ theme:favicon file="favicons/apple-touch-icon-precomposed.png" rel="apple-touch-icon" }}
+{{ theme:favicon file="favicons/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon" }}
+{{ theme:favicon file="favicons/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" }}
+{{ theme:favicon file="favicons/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" }}
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+{{ asset:css file="{{theme:options:bootSwatch_layout}}.css" }}
+{{ asset:css file="pyro_bootswatch.css" }}
+
+{{ asset:js file="jquery-1.9.1.js" }}
+
+
+{{ asset:js file="bootstrap.js" }}
+
+{{ asset:css file="mystyle.css"  }}
+
+
+{{ template:metadata }}

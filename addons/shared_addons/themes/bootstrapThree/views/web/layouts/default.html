@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    
+    {{ theme:partial name="metadata" }}
+    
+  </head>
+<body>
+    
+     <div id="container" class="container-fluid">
+    {{ if { url:segments segment="1" } == '' }}
+        <div class="jumbotron">
+            <div id="logo" class="container text-center">
+		<h1><a href="{{ url:site  }}" title="Home">{{ settings:site_name }}</a></h1>
+		<h2 class="slogan">{{ settings:site_slogan }}</h2>
+            </div>
+        </div>
+    {{endif}}     
+        {{ theme:partial name="header" }}
+
+        
+         {{ if { url:segments segment="1" }  == 'seller' }} 
+            
+            {{ theme:partial name="slider" }}
+     	{{ endif }}     	
+        <!--{{ theme:partial name="container"}}-->
+
+        {{ template:body }}
+   
+     </div>      
+            
+ </body>
+
+   	
+  
+<div id="footer">
+
+{{ theme:partial name="footer" }}
+
+     
+ </div>
+
+     
+     
+</html>

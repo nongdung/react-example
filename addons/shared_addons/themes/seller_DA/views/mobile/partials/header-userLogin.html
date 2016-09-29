@@ -1,0 +1,32 @@
+ <li>
+  {{ if user:logged_in }}
+  {{ if settings:enable_profiles }}
+  <a href="{{ url:site uri='my-profile' }}">{{ helper:gravatar email=user:email size="16" }} {{ user:display_name }}</a>
+  {{ else }}
+  {{ helper:gravatar email=user:email size="20" }} {{ user:display_name }}
+  {{ endif }}
+  {{ if settings:enable_profiles }}
+  <a href="{{ url:site uri='edit-profile' }}">{{ helper:lang lineai='users/login' }}" method="post" accept-charset="utf-8" id="login-small" class="search">
+
+
+    <input type="hidden" style="margin-bottom: 15px;" name="redirect_to" value="{{ url:current }}" />
+    <input type="text" id="email" style="margin-bottom: 15px;" name="email" maxlength="120" placeholder="{{ helper:lang line="global:email" }}" />
+    <input type="password" id="password" name="password" maxlength="20" placeholder="{{ helper:lang line="global:password" }}" /><br><br>
+
+
+
+    <div class="ckBox">
+     <label class="string optional" for="remember-check">
+      <input type="checkbox" style="width: 20px"  id="remember-check" name="remember" value="1"  />
+      {{ helper:lang line="user:remember" }}
+    </label>
+  </div>
+  <input type="submit" class="btn btn-primary" style="clear: both; margin-top: 10px" value="{{ helper:lang line='login_label' }}" name="btnLogin" />
+
+  <p align="right" style="clear:both; margin-top:10px; margin-right: 10px; margin-bottom:0px; font-size: small; color:#AAA;"><?php echo anchor('users/reset_pass', lang('user:reset_password_link'));?>   
+
+  </form> 
+
+  {{ endif }}
+</li>
+
